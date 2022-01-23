@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Sangria Js Library</title>
+
+	<script src="../sangria-javascript-library.js"></script>
+</head>
+<body>
+<ul>
+	<li>
+		<label><input type="checkbox" class="all_check">전체</label>
+	</li>
+	<li>
+		<label><input type="checkbox" class="check_list" value="a">a</label>
+	</li>
+	<li>
+		<label><input type="checkbox" class="check_list" value="b">b</label>
+	</li>
+	<li>
+		<label><input type="checkbox" class="check_list" value="c">c</label>
+	</li>
+</ul>
+<script>
+	let sangria = new SangriaJavascriptLibrary();
+	sangria.checkBoxToggleEvent('.all_check', '.check_list');
+</script>
+</body>
+</html>
